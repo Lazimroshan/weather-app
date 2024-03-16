@@ -1,0 +1,232 @@
+.Login {
+    background-image: url('https://images.unsplash.com/photo-1490598000245-075175152d25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Homediv{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+}
+.Lform{    
+    padding: 25px;
+    color: white; 
+    padding: 30px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.Hometext{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text1{
+    color: #ffffff;
+    font-family: 14px "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
+    font-weight: 700;
+    text-shadow: 0 2px rgb(0, 0, 0);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.text2{
+    color: #ffffff;
+    font-family: 14px "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media only screen and (max-width: 690px) {
+  
+    .Lform {    
+        padding: 15px; 
+        margin: auto;
+    }
+    .text1{
+        color: #ffffff;
+        font-weight: 700;
+        text-shadow: 0 2px rgb(0, 0, 0);
+        text-transform: capitalize;
+        text-align: center;
+
+    }
+    .Homediv{
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  
+}
+
+/* Signup css */
+
+.Signup {
+    background-image: url('https://images.unsplash.com/photo-1490598000245-075175152d25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Sform{    
+    padding: 25px;
+    color: white; 
+    padding: 30px;
+    font-weight: 400;
+    font-size: large;
+}
+.Homediv1{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.Hometext{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 690px) {
+  
+    .Sform {    
+        padding: 15px; 
+        margin: auto;
+    }
+    .text1{
+        color: #ffffff;
+        font-weight: 700;
+        text-shadow: 0 2px rgb(0, 0, 0);
+        text-transform: capitalize;
+        text-align: center;
+
+    }
+    .Homediv1{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  
+}
+
+/* Weatherpage */
+
+.weathermain{
+    background-image: url('https://images.unsplash.com/photo-1490598000245-075175152d25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover; 
+    background-position: center;
+    position: absolute;
+}
+
+.inputField{
+    /* text-align: center; */
+    margin-top: 10px;
+}
+.Nav1{
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+.text-center{
+    width: 350px;
+    background-color: #fff;
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+    border: 1px solid #a6a6a6;
+    border-top-color: #949494;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    outline: 0;
+    color: #111;
+    font-size: 13px;
+    :focus{
+        border-color: #e77600;
+        box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+    }
+
+}
+
+.weatherCard{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    width: 39rem;
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 18px 3px 3px 3px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.weatherCard  p{
+     padding: 4px;
+}
+.cityName{
+    width: 39rem;
+    text-align: center;
+     background-color: rgba(150, 149, 149, 0.51);
+     border-radius: 2rem;
+
+}
+.weatherinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly; 
+    padding-top:50px ;
+   
+}
+.home1{
+    background-color: rgba(150, 149, 149, 0.51);
+    min-height: 100vh;
+}
+.savedcity{
+    display: flex;
+    
+}
+.cityName1{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly; 
+background-color: rgba(150, 149, 149, 0.51);
+
+
+}
+.weatherCard1{
+    
+    display: flex;
+    flex-direction: row;
+    width: 39rem;
+    background: none;
+    color: #000000;
+    background-color: rgba(150, 149, 149, 0.51);
+    font-family: "Poppins", sans-serif;
+    text-align: center; 
+    justify-content: center; 
+    align-items: center;
+    padding: 18px 3px 3px 3px;
+}
+.weatherCard1 p{
+    padding: 5px;
+}
+.Wtext{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+}
