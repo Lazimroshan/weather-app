@@ -26,7 +26,7 @@ function SavedCities() {
       for (let cityName of savedCities) {
         try {
           const response = await axios.get(
-            `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=3531a36cae131ef86c0fd8127473f1dd`
+            `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=acbdb25ae2eb67288b092f3358a81bf2`
           );
           const filteredData = response.data.list.filter(
             (item, index) => index % 8 === 0
