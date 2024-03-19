@@ -179,7 +179,7 @@
 .weatherCard  p{
      padding: 4px;
 }
-.cityName{
+.city{
     width: 39rem;
     text-align: center;
      background-color: rgba(150, 149, 149, 0.51);
