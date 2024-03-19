@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 function WeatherPage() {
   const [city, setCity] = useState("");
   const [searchcity, setSearchCity] = useState("");
-  const [data, setData] = useState([]);
+  const [data, setdata] = useState([]);
   const [searchData, setSearchData] = useState([]);
 
   
@@ -18,9 +18,9 @@ function WeatherPage() {
     navigator.geolocation.getCurrentPosition((position) => {
       const { latitude, longitude } = position.coords;
 
-      const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=acbdb25ae2eb67288b092f3358a81bf2`;
+      
 
-      axios.get(url).then((response) => {
+      axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=acbdb25ae2eb67288b092f3358a81bf2`).then((response) => {
         const city = response.data.city.name;
         setCity(city);
       });
@@ -37,7 +37,7 @@ function WeatherPage() {
           const filteredData = response.data.list.filter((item, index) => {
             return index % 8 === 0;
           });
-          setData(filteredData);
+          setdata(filteredData);
         });
     }
   }, [city]);
@@ -133,7 +133,7 @@ function WeatherPage() {
     </Navbar>
       
       <div className="weatherinfo">
-        <div className="cityName">
+        <div className="city">
           <div><h1 className="Wtext">My Location</h1><br /><h2 className="Wtext">{city}</h2><br /></div>
           {data.map((item, index) => (
             <div key={index}>
@@ -158,7 +158,7 @@ function WeatherPage() {
         <div>
           <div className="weather">
             <div className="Locations">
-              <div className="cityName">
+              <div className="city">
                  <h2 className="Wtext">{searchcity}</h2>
                 {
                   searchData.map((item, index) => (
